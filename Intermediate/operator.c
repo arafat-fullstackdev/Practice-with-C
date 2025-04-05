@@ -31,5 +31,12 @@ int main() {
     double reminder = 47%3;
     printf("%lf\n",reminder);
 
+    // Assignment OPerator
+
+    int number = 6;
+
+    number = number +3;
+    printf("Assign value:%d",number);
+
     return 0;
 }
