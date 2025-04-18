@@ -46,6 +46,7 @@ for(i=0; i<n; i++){
 printf("Descending Order: \n");
 for(i =0; i<n; i++){
     printf("%d\n", arr[i]);
+
 }
 
     //printf("The element is: %d\n", n);
