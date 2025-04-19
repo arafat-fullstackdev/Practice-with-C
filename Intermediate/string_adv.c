@@ -29,6 +29,25 @@ int main() {
  strcat(P,Q);
  printf("Star Cat Function: %s\n", P,Q);
 
+ //? strrev
+ char P1[100];
+ char P2[100];
+ gets(P1);
+ 
+ int length_rev = strlen(P1);
+ int Q1 =  length_rev-1;
+
+ for(i=0; i<Q1; i++){
+    P2[i] = P1[Q1];
+    Q1--;
+ }
+ P2[i] ='\0';
+
+ printf("Reverse Cat Function: %s\n", P2);
+
+//  strrev(P1,P2);
+//  printf("Revise Cat Function: %s\n", P1,P2);
+
  
     return 0;
 }
