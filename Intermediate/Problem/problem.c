@@ -10,9 +10,18 @@ struct Rectangle{
     int minutes;
   };
 
+ 
   int TimeToMin(struct Time t){
     return t.hours*60 + t.minutes;
   };
+
+  struct Circle {
+    float radius;
+  };
+ int circleCalc(struct Circle c){
+  return 3.1416* c.radius * c.radius;
+ }; 
+
 int main() {
  
     
@@ -42,5 +51,19 @@ printf("Perimeter: %.2f\n", perimeter);
 
  int totalMinutes = TimeToMin(time);
  printf("Total Minutes: %d\n", totalMinutes);
+
+//? Problem 3
+
+struct Circle circle;
+printf("Enter Radius: ");
+scanf("%f", &circle.radius);
+float areaC = circleCalc(circle);
+// float circumstance= calculateCircum(circle);
+ float circumstance= 2*3.1416*circle.radius;
+
+printf("AreaC of Circle: %.2f\n", areaC);
+printf("AreaC of Circumstance: %.2f\n", circumstance);
+//printf("AreaC of Circle: %.2f\n", circumstance);
+
     return 0;
 }
